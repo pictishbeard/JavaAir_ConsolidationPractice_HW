@@ -2,11 +2,14 @@ package flightinfo.flightlist.flightstaff;
 
 public enum CabinCrew {
 
-    GRADE1(1),
-    GRADE2(2),
-    SUPERVISOR(3);
+    CAPTAIN(1),
+    FIRSTOFFICER(2),
+    PURSER(3),
+    FLIGHTATTENDANT(4);
 
+    private String name;
     private final int value;
+
 
     CabinCrew(int value) {
         this.value = value;
