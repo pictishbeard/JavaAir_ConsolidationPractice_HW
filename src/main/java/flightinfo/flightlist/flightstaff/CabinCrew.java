@@ -1,21 +1,27 @@
 package flightinfo.flightlist.flightstaff;
 
-public enum CabinCrew {
-
-    CAPTAIN(1),
-    FIRSTOFFICER(2),
-    PURSER(3),
-    FLIGHTATTENDANT(4);
+public class CabinCrew {
 
     private String name;
-    private final int value;
+    private Rank ranking;
 
 
-    CabinCrew(int value) {
-        this.value = value;
+    public CabinCrew(String name, Rank rank) {
+        this.name = name;
+        this.ranking = rank;
     }
 
-    public int getValue() {
-        return value;
+    public String getName() {
+        return this.name;
     }
+
+    public Rank getRank() {
+        return ranking;
+    }
+
+    public String announcementCall() {
+        return "In for a bumpy ride!";
+    }
+
+
 }

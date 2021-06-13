@@ -9,7 +9,7 @@ public enum Plane {
     public final int capacity;
     public final int planeWeight;
 
-    Plane(, int capacity, int planeWeight) {
+    Plane(int capacity, int planeWeight) {
         this.capacity = capacity;
         this.planeWeight = planeWeight;
     }
