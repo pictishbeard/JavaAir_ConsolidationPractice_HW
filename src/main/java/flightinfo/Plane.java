@@ -2,29 +2,23 @@ package flightinfo;
 
 public enum Plane {
 
-    BOEING747(1, 250, 1000),
-    AIRBUS380(2, 300, 1500),
-    BOEING777(3, 400, 2000);
+    BOEING747(250, 1000),
+    AIRBUS380(300, 1500),
+    BOEING77 (400, 2000);
 
-    private int capacity;
-    private int planeWeight;
-    private final int value;
+    public final int capacity;
+    public final int planeWeight;
 
-    Plane(int value, int capacity, int planeWeight) {
-        this.value = value;
+    Plane(, int capacity, int planeWeight) {
         this.capacity = capacity;
         this.planeWeight = planeWeight;
     }
 
-    public int getValue() {
-        return value;
-    }
-
     public int getCapacity() {
-        return capacity;
+        return this.capacity;
     }
 
     public int getPlaneWeight() {
-        return planeWeight;
+        return this.planeWeight;
     }
 }
